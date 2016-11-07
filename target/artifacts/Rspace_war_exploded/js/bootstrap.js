@@ -4,6 +4,7 @@
  * Licensed under the MIT license
  */
 
+
 if (typeof jQuery === 'undefined') {
   throw new Error('Bootstrap\'s JavaScript requires jQuery')
 }
@@ -59,6 +60,12 @@ if (typeof jQuery === 'undefined') {
     setTimeout(callback, duration)
     return this
   }
+
+  $('#topnavbar').affix({
+    offset: {
+      top: $('#banner').height()
+    }
+  });
 
   $(function () {
     $.support.transition = transitionEnd()
