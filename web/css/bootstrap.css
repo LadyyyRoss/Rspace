@@ -6755,3 +6755,21 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+body {
+  font-family: sans-serif;
+}
+#container {
+  background: #DDD;
+  max-width: 1000px;
+}
+.item {
+  width: 200px;
+  float: left;
+}
+.item img {
+  display: block;
+  width: 100%;
+}
+button {
+  font-size: 18px;
+}
