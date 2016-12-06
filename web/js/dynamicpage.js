@@ -9,7 +9,7 @@ $(function() {
     $pageWrap.height($pageWrap.height());
     baseHeight = $pageWrap.height() - $mainContent.height();
     
-    $("div.item").delegate("a", "click", function() {
+    $('span[name=group]').delegate("a", "click", function() {
 
         window.location.hash = $(this).attr("href");
         return false;
