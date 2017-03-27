@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3f6de6c-e965-44e3-9b93-7a9401607161" name="Default" comment="">
+    <list default="true" id="f3f6de6c-e965-44e3-9b93-7a9401607161" name="Default" comment="final">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/artifacts/Rspace_war_exploded/index.html" afterPath="$PROJECT_DIR$/target/artifacts/Rspace_war_exploded/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/artifacts/Rspace_war_exploded/upcoming.html" afterPath="$PROJECT_DIR$/target/artifacts/Rspace_war_exploded/upcoming.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.html" afterPath="$PROJECT_DIR$/web/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/artifacts/Rspace_war_exploded/calendar.html" afterPath="$PROJECT_DIR$/target/artifacts/Rspace_war_exploded/calendar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/calendar.html" afterPath="$PROJECT_DIR$/web/calendar.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/calendarEvents.js" afterPath="$PROJECT_DIR$/web/js/calendarEvents.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/upcoming.html" afterPath="$PROJECT_DIR$/web/upcoming.html" />
     </list>
     <ignored path="Rspace.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,12 +27,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="calendar.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="calendar.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/calendar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="210">
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+              <folding>
+                <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,15 +52,15 @@
       <file leaf-file-name="calendarEvents.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/calendarEvents.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="33" column="120" selection-start-line="33" selection-start-column="120" selection-end-line="33" selection-end-column="120" />
+            <state relative-caret-position="840">
+              <caret line="56" column="227" selection-start-line="56" selection-start-column="227" selection-end-line="56" selection-end-column="227" />
               <folding>
-                <marker date="1488471961000" expanded="true" signature="442:481" ph="..." />
-                <marker date="1488471961000" expanded="true" signature="1107:1146" ph="..." />
-                <marker date="1488471961000" expanded="true" signature="1776:1815" ph="..." />
-                <marker date="1488471961000" expanded="true" signature="2442:2481" ph="..." />
-                <marker date="1488471961000" expanded="true" signature="3111:3150" ph="..." />
-                <marker date="1488471961000" expanded="true" signature="3777:3816" ph="..." />
+                <marker date="1488476553000" expanded="true" signature="442:481" ph="..." />
+                <marker date="1488476553000" expanded="true" signature="1103:1142" ph="..." />
+                <marker date="1488476553000" expanded="true" signature="1768:1807" ph="..." />
+                <marker date="1488476553000" expanded="true" signature="2430:2469" ph="..." />
+                <marker date="1488476553000" expanded="true" signature="3095:3134" ph="..." />
+                <marker date="1488476553000" expanded="true" signature="3757:3796" ph="..." />
               </folding>
             </state>
           </provider>
@@ -76,10 +76,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
+            <state relative-caret-position="1260">
               <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
               <folding />
             </state>
@@ -118,10 +118,10 @@
         <option value="$PROJECT_DIR$/web/js/dynamicpage.js" />
         <option value="$PROJECT_DIR$/tomcat/conf/server.xml" />
         <option value="$PROJECT_DIR$/web/checkin.html" />
-        <option value="$PROJECT_DIR$/web/calendar.html" />
-        <option value="$PROJECT_DIR$/web/js/calendarEvents.js" />
         <option value="$PROJECT_DIR$/web/upcoming.html" />
         <option value="$PROJECT_DIR$/web/index.html" />
+        <option value="$PROJECT_DIR$/web/js/calendarEvents.js" />
+        <option value="$PROJECT_DIR$/web/calendar.html" />
       </list>
     </option>
   </component>
@@ -140,7 +140,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1241" />
+    <option name="width" value="1239" />
     <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -168,8 +168,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -222,6 +220,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -721,7 +721,6 @@
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_Rspace_3" />
         <option name="DEPLOY_TOMCAT_APPS" value="true" />
-        <option name="JNDI_PORT" value="1098" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -810,7 +809,11 @@
       <workItem from="1487692210284" duration="2978000" />
       <workItem from="1487701534535" duration="335000" />
       <workItem from="1488306710526" duration="17295000" />
-      <workItem from="1488465120304" duration="7643000" />
+      <workItem from="1488465120304" duration="9078000" />
+      <workItem from="1489510967848" duration="303000" />
+      <workItem from="1490192663404" duration="444000" />
+      <workItem from="1490207467199" duration="1429000" />
+      <workItem from="1490631091197" duration="245000" />
     </task>
     <task id="LOCAL-00001" summary="Social Media Links">
       <created>1480598389183</created>
@@ -847,15 +850,22 @@
       <option name="project" value="LOCAL" />
       <updated>1488379895665</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="final">
+      <created>1488475817242</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1488475817242</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65609000" />
+    <option name="totallyTimeSpent" value="69465000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1241" height="777" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1239" height="777" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -866,12 +876,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36874053" sideWeight="0.5062552" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36722305" sideWeight="0.4937448" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36418816" sideWeight="0.4937448" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.49707603" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.49707603" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.49707603" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36947456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23475355" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -934,7 +944,8 @@
     <MESSAGE value="FInal" />
     <MESSAGE value="iteration 1 #1" />
     <MESSAGE value="Pulling in events from calendar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pulling in events from calendar" />
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -949,7 +960,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1016,7 +1029,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1090,7 +1105,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1227,14 +1244,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/calendar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/dynamicpage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1243,18 +1252,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/calendarEvents.js">
+    <entry file="file://$PROJECT_DIR$/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="33" column="120" selection-start-line="33" selection-start-column="120" selection-end-line="33" selection-end-column="120" />
-          <folding>
-            <marker date="1488471961000" expanded="true" signature="442:481" ph="..." />
-            <marker date="1488471961000" expanded="true" signature="1107:1146" ph="..." />
-            <marker date="1488471961000" expanded="true" signature="1776:1815" ph="..." />
-            <marker date="1488471961000" expanded="true" signature="2442:2481" ph="..." />
-            <marker date="1488471961000" expanded="true" signature="3111:3150" ph="..." />
-            <marker date="1488471961000" expanded="true" signature="3777:3816" ph="..." />
-          </folding>
+        <state relative-caret-position="1260">
+          <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1266,11 +1268,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
+    <entry file="file://$PROJECT_DIR$/web/js/calendarEvents.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="840">
+          <caret line="56" column="227" selection-start-line="56" selection-start-column="227" selection-end-line="56" selection-end-column="227" />
+          <folding>
+            <marker date="1488476553000" expanded="true" signature="442:481" ph="..." />
+            <marker date="1488476553000" expanded="true" signature="1103:1142" ph="..." />
+            <marker date="1488476553000" expanded="true" signature="1768:1807" ph="..." />
+            <marker date="1488476553000" expanded="true" signature="2430:2469" ph="..." />
+            <marker date="1488476553000" expanded="true" signature="3095:3134" ph="..." />
+            <marker date="1488476553000" expanded="true" signature="3757:3796" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/calendar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
