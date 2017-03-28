@@ -62,3 +62,19 @@ function myFunction() {
 
 
 }
+
+function links() {
+    var win = window.open("https://calendar.google.com/calendar/ical/apjsaqt68sa0fs0e6nmpo81ms0%40group.calendar.google.com/public/basic.ics");
+    win.close();
+    win = window.open("https://calendar.google.com/calendar/ical/5e5no23jcqdbqmin32f8svdm8g%40group.calendar.google.com/public/basic.ics");
+    win.close();
+    win = window.open("https://calendar.google.com/calendar/ical/dirpjbv7sfq5p2v13r9g9gso04%40group.calendar.google.com/public/basic.ics");
+    win.close();
+    win = window.open("https://calendar.google.com/calendar/ical/kibrv4dalfnvj5u08vfacu98k8%40group.calendar.google.com/public/basic.ics");
+    win.close();
+    win = window.open("https://calendar.google.com/calendar/ical/n09br9cegtalvd0m8b0k32ofs8%40group.calendar.google.com/public/basic.ics");
+    win.close();
+    win = window.open("https://calendar.google.com/calendar/ical/6ntp3er9c2t9cu8cckr0vibk4s%40group.calendar.google.com/public/basic.ics");
+    win.close();
+}
+
