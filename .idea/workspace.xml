@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f3f6de6c-e965-44e3-9b93-7a9401607161" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/artifacts/Rspace_war_exploded/calendar.html" afterPath="$PROJECT_DIR$/target/artifacts/Rspace_war_exploded/calendar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/calendar.html" afterPath="$PROJECT_DIR$/web/calendar.html" />
     </list>
     <ignored path="Rspace.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -858,7 +856,7 @@
       <workItem from="1490192663404" duration="444000" />
       <workItem from="1490207467199" duration="1429000" />
       <workItem from="1490631091197" duration="23871000" />
-      <workItem from="1490894197325" duration="108000" />
+      <workItem from="1490894197325" duration="122000" />
     </task>
     <task id="LOCAL-00001" summary="Social Media Links">
       <created>1480598389183</created>
@@ -916,11 +914,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490716221640</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="final">
+      <created>1490894415532</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1490894415532</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93199000" />
+    <option name="totallyTimeSpent" value="93213000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1239" height="777" extended-state="6" />
