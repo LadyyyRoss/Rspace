@@ -30,6 +30,59 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Scripts for sanitising -->
+    <script>
+        // Function called in the onsubmit for the checkin form. Makes sure there are no valid tags in submitted
+        // text. If there are, it removes them. Handles all cases as for the tags as well.
+        function sanitiseCheckIn(){
+            var fnameField = document.getElementById("fname");
+            var firstName = sanitise(fnameField.value);
+            fnameField.innerHTML = firstName;
+
+            var lnameField = document.getElementById("lname");
+            var lastName = sanitise(lnameField.value);
+            lnameField.innerHTML = lastName;
+
+            var emlField = document.getElementById("emailaddr");
+            var eml = sanitise(emlField.value);
+            fnameField.innerHTML = eml;
+
+            return true;
+        }
+
+        function sanitiseContact(){
+            var fnameField = document.getElementById("name");
+            var firstName = sanitise(fnameField.value);
+            fnameField.innerHTML = firstName;
+
+            var lnameField = document.getElementById("surname");
+            var lastName = sanitise(lnameField.value);
+            lnameField.innerHTML = lastName;
+
+            var emlField = document.getElementById("form_email");
+            var eml = sanitise(emlField.value);
+            emlField.innerHTML = eml;
+
+            var msgField = document.getElementById("form_message");
+            var msg = sanitise(msgField.value);
+            msgField.innerHTML = msg;
+
+            return true;
+        }
+
+        //
+        function sanitise(str){
+            str = str.toLowerCase();
+            var toRemove = ["<script>", "<div>", "<alert>", "<input>"];
+            for (var i = 0; i < toRemove.length; i++) {
+                str = str.replace(toRemove[i], "");
+            }
+
+            str = str.charAt(0).toUpperCase() + str.slice(1);
+            return str;
+        }
+    </script>
+
 </head>
 
 <body>
@@ -74,7 +127,7 @@
                     <li><a target="_blank" href="https://www.facebook.com/radspace"><i class="fa fa-lg fa-facebook"></i></a></li>
                     <li><a target="_blank" href="https://twitter.com/RadSPaCE"><i class="fa fa-lg fa-twitter"></i></a></li>
                     <li><a  target="_blank" href="https://www.instagram.com/r_space/"><i class="fa fa-lg fa-instagram"></i></a></li>
-                    <li><a target="_blank" href="https://snapchat.com/add/radspace><i class="fa fa-lg fa-snapchat-ghost"></i></a></li>
+                    <li><a target="_blank" href="https://snapchat.com/add/radspace"><i class="fa fa-lg fa-snapchat-ghost"></i></a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
