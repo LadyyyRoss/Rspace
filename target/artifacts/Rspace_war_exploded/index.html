@@ -75,7 +75,9 @@
             str = str.toLowerCase();
             var toRemove = ["<script>", "<div>", "<alert>", "<input>"];
             for (var i = 0; i < toRemove.length; i++) {
-                str = str.replace(toRemove[i], "");
+                while (str.includes(toRemove[i])) {
+                    str = str.replace(toRemove[i], "");
+                }
             }
 
             str = str.charAt(0).toUpperCase() + str.slice(1);
@@ -127,7 +129,7 @@
                     <li><a target="_blank" href="https://www.facebook.com/radspace"><i class="fa fa-lg fa-facebook"></i></a></li>
                     <li><a target="_blank" href="https://twitter.com/RadSPaCE"><i class="fa fa-lg fa-twitter"></i></a></li>
                     <li><a  target="_blank" href="https://www.instagram.com/r_space/"><i class="fa fa-lg fa-instagram"></i></a></li>
-                    <li><a target="_blank" href="https://snapchat.com/add/radspace>"<i class="fa fa-lg fa-snapchat-ghost"></i></a></li>
+                    <li><a target="_blank" href="https://snapchat.com/add/radspace"><i class="fa fa-lg fa-snapchat-ghost"></i></a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
