@@ -12,9 +12,9 @@
     <title>R-SPaCE</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/calendar.css.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/calendar.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.css" rel="stylesheet" type="text/css" />
 
     <!-- Custom CSS -->
     <style>
@@ -33,6 +33,10 @@
             position: absolute; top:0; left: 0; width: 100%; height: 100%;
 
         }
+         .img-circle{
+             border-radius: 50%;
+         }
+
 
     </style>
 
@@ -41,6 +45,47 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script>
+        // Function called in the onsubmit for the checkin form. Makes sure there are no valid tags in submitted
+        // text. If there are, it removes them. Handles all cases as for the tags as well.
+        function sanitiseCheckIn(){
+            var fnameField = document.getElementById("fname");
+            var firstName = sanitise(fnameField.value);
+            fnameField.innerHTML = firstName;
+            var lnameField = document.getElementById("lname");
+            var lastName = sanitise(lnameField.value);
+            lnameField.innerHTML = lastName;
+            var emlField = document.getElementById("emailaddr");
+            var eml = sanitise(emlField.value);
+            fnameField.innerHTML = eml;
+            return true;
+        }
+        function sanitiseContact(){
+            var fnameField = document.getElementById("name");
+            var firstName = sanitise(fnameField.value);
+            fnameField.innerHTML = firstName;
+            var lnameField = document.getElementById("surname");
+            var lastName = sanitise(lnameField.value);
+            lnameField.innerHTML = lastName;
+            var emlField = document.getElementById("form_email");
+            var eml = sanitise(emlField.value);
+            emlField.innerHTML = eml;
+            var msgField = document.getElementById("form_message");
+            var msg = sanitise(msgField.value);
+            msgField.innerHTML = msg;
+            return true;
+        }
+        //
+        function sanitise(str){
+            str = str.toLowerCase();
+            var toRemove = ["<script>", "<div>", "<alert>", "<input>"];
+            for (var i = 0; i < toRemove.length; i++) {
+                str = str.replace(toRemove[i], "");
+            }
+            str = str.charAt(0).toUpperCase() + str.slice(1);
+            return str;
+        }
+    </script>
 
 
     <![endif]-->
