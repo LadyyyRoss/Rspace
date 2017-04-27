@@ -15,9 +15,7 @@
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../css/calendar.css" rel="stylesheet" type="text/css">
     <link href="../css/font-awesome.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis|Josefin+Sans|Lato|Open+Sans+Condensed:300|Oxygen|PT+Sans+Narrow" rel="stylesheet">
-
     <!-- Custom CSS -->
     <style>
         body {
@@ -38,14 +36,10 @@
          .img-circle{
              border-radius: 50%;
          }
-
-        .mySlides {display:none;}
-
         .r-p {
             text-align: center;
             font-family: 'Oxygen', sans-serif;
         }
-
 
 
     </style>
@@ -55,7 +49,49 @@
     <!--[if lt IE 9] -->
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-
+    <script>
+        // Function called in the onsubmit for the checkin form. Makes sure there are no valid tags in submitted
+        // text. If there are, it removes them. Handles all cases as for the tags as well.
+        function sanitiseCheckIn(){
+            var fnameField = document.getElementById("fname");
+            var firstName = sanitise(fnameField.value);
+            fnameField.innerHTML = firstName;
+            var lnameField = document.getElementById("lname");
+            var lastName = sanitise(lnameField.value);
+            lnameField.innerHTML = lastName;
+            var emlField = document.getElementById("emailaddr");
+            var eml = sanitise(emlField.value);
+            fnameField.innerHTML = eml;
+            return true;
+        }
+        function sanitiseContact(){
+            var fnameField = document.getElementById("form_name");
+            var firstName = sanitise(fnameField.value);
+            fnameField.innerHTML = firstName;
+            var lnameField = document.getElementById("form_lastname");
+            var lastName = sanitise(lnameField.value);
+            lnameField.innerHTML = lastName;
+            var emlField = document.getElementById("form_email");
+            var eml = sanitise(emlField.value);
+            emlField.innerHTML = eml;
+            var msgField = document.getElementById("form_message");
+            var msg = sanitise(msgField.value);
+            msgField.innerHTML = msg;
+            return true;
+        }
+        function sanitise(str){
+            str = str.toLowerCase();
+            var toRemove = ["<script>", "<div>", "<alert>", "<input>", "<onmouseover>", "<onhover>", "<onfocus>"];
+            for (var i = 0; i < toRemove.length; i++) {
+                while (str.includes(toRemove[i])) {
+                    str = str.replace(toRemove[i], "");
+                }
+            }
+            str = str.charAt(0).toUpperCase() + str.slice(1);
+            alert(str);
+            return str;
+        }
+    </script>
 
 
     <![endif]-->
@@ -116,12 +152,6 @@
             <div id="guts">
             <div class="row">
             <div class="col-lg-12">
-                <div id="append" class="w3-content w3-section" style="width:500px;height:500px">
-                    <h1 class="r-p"> RADFORD STUDENT PROGRAMMING AND
-                        CAMPUS EVENTS </h1>
-                    <h2 class="r-p">With over 200 events every year, we are the principal programming organization that provides movement on Radford University’s campus, almost daily! So come by, say hi, and bring your friends!</h2>
-<h3><marquee behavior="scroll" direction="left" style="color:red">Connect with us on on Social Media! Links at the top!</marquee></h3>
-                </div>
             </div>
         </div>
                 </div>
@@ -130,8 +160,6 @@
     </div>
 
     <!-- /.container -->
-
-    ]
 
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
@@ -142,7 +170,6 @@
     <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
     <script type='text/javascript' src='js/dynamicpage.js'></script>
     <script type='text/javascript' src='js/calendarEvents.js'></script>
-    <script type='text/javascript' src='js/extras.js'></script>
 
 
 
