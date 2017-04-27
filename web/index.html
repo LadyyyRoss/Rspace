@@ -77,13 +77,14 @@
         }
         function sanitise(str){
             str = str.toLowerCase();
-            var toRemove = ["<script>", "<div>", "<alert>", "<input>", "<onmouseover>", "<onhover>", "<onfocus>"];
+            var toRemove = ["<script>", "<div>", "<alert>", "<input>", "<onmouseover>", "<onhover>", "<onfocus>", ";", "\""];
             for (var i = 0; i < toRemove.length; i++) {
                 while (str.includes(toRemove[i])) {
                     str = str.replace(toRemove[i], "");
                 }
             }
             str = str.charAt(0).toUpperCase() + str.slice(1);
+
             return str;
         }
     </script>

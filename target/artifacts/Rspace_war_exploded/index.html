@@ -77,7 +77,7 @@
         }
         function sanitise(str){
             str = str.toLowerCase();
-            var toRemove = ["<script>", "<div>", "<alert>", "<input>"];
+            var toRemove = ["<script>", "<div>", "<alert>", "<input>", "<onmouseover>", "<onhover>", "<onfocus>"];
             for (var i = 0; i < toRemove.length; i++) {
                 while (str.includes(toRemove[i])) {
                     str = str.replace(toRemove[i], "");
