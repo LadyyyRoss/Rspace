@@ -42,7 +42,7 @@
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+    <!--[if lt IE 9] -->
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <script>
@@ -61,10 +61,10 @@
             return true;
         }
         function sanitiseContact(){
-            var fnameField = document.getElementById("name");
+            var fnameField = document.getElementById("form_name");
             var firstName = sanitise(fnameField.value);
             fnameField.innerHTML = firstName;
-            var lnameField = document.getElementById("surname");
+            var lnameField = document.getElementById("form_lastname");
             var lastName = sanitise(lnameField.value);
             lnameField.innerHTML = lastName;
             var emlField = document.getElementById("form_email");
@@ -75,14 +75,16 @@
             msgField.innerHTML = msg;
             return true;
         }
-        //
         function sanitise(str){
             str = str.toLowerCase();
-            var toRemove = ["<script>", "<div>", "<alert>", "<input>"];
+            var toRemove = ["<script>", "<div>", "<alert>", "<input>", "<onmouseover>", "<onhover>", "<onfocus>"];
             for (var i = 0; i < toRemove.length; i++) {
-                str = str.replace(toRemove[i], "");
+                while (str.includes(toRemove[i])) {
+                    str = str.replace(toRemove[i], "");
+                }
             }
             str = str.charAt(0).toUpperCase() + str.slice(1);
+            alert(str);
             return str;
         }
     </script>
@@ -132,7 +134,7 @@
                     <li><a target="_blank" href="https://www.facebook.com/radspace"><i class="fa fa-lg fa-facebook"></i></a></li>
                     <li><a target="_blank" href="https://twitter.com/RadSPaCE"><i class="fa fa-lg fa-twitter"></i></a></li>
                     <li><a  target="_blank" href="https://www.instagram.com/r_space/"><i class="fa fa-lg fa-instagram"></i></a></li>
-                    <li><a target="_blank" href="https://snapchat.com/add/radspace><i class="fa fa-lg fa-snapchat-ghost"></i></a></li>
+                    <li><a target="_blank" href="https://snapchat.com/add/radspace"><i class="fa fa-lg fa-snapchat-ghost"></i></a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
